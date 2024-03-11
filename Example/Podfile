@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TMdbSource_Example' do
+  pod 'TMdbSource', :path => '../'
+
+  target 'TMdbSource_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
