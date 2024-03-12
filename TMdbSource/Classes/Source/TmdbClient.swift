@@ -8,16 +8,16 @@
 import Foundation
 
 protocol TmdbClient {
-    func fetchMovies(pageNo: Int, completion: @escaping (Result<[TMdbMovie],HttpClientError>) -> Void )
+    func fetchMovies(pageNo: Int, category: Category, completion: @escaping (Result<[TMdbMovie],HttpClientError>) -> Void )
 }
 
 class TmdbClientImpl: TmdbClient {
     
     var client: HttpClient?
     
-    func fetchMovies(pageNo: Int, completion: @escaping (Result<[TMdbMovie],HttpClientError>) -> Void) {
+    func fetchMovies(pageNo: Int, category: Category, completion: @escaping (Result<[TMdbMovie],HttpClientError>) -> Void) {
         let headers = ["accept": "application/json"]
-        let clientModel = HttpClientModel(endpoint: "https://api.themoviedb.org/3/movie/popular?language=en-US&page=3&api_key=da30e822b633d40f53a9e6d8da4e8c99", method: .get, headers: headers)
+        let clientModel = HttpClientModel(endpoint: "https://api.themoviedb.org/3/movie/\(category.getApiName())?language=en-US&page=3&api_key=da30e822b633d40f53a9e6d8da4e8c99", method: .get, headers: headers)
         let httpClient = HttpClient()
         self.client = httpClient
         httpClient.fetch(model: clientModel) { result in

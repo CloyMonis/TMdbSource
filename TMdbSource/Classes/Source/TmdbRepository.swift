@@ -8,22 +8,36 @@
 import Foundation
 
 protocol TmdbRepository {
-    func fetch(pageNo: Int) -> [TMdbMovie]
-    func store(pageNo: Int, movies: [TMdbMovie])
+    func fetch(pageNo: Int, category: Category) -> [TMdbMovie]
+    func store(pageNo: Int, category: Category, movies: [TMdbMovie])
 }
 
 class TmdbRepositoryImpl: TmdbRepository {
     
-    private var hashMap = [Int: [TMdbMovie]]()
+    private var latest = [Int: [TMdbMovie]]()
+    private var popular = [Int: [TMdbMovie]]()
     
-    func fetch(pageNo: Int) -> [TMdbMovie] {
-        guard let movies = hashMap[pageNo] else {
-            return [TMdbMovie]()
+    func fetch(pageNo: Int, category: Category) -> [TMdbMovie] {
+        switch category {
+        case .latest:
+            guard let movies = latest[pageNo] else {
+                return [TMdbMovie]()
+            }
+            return movies
+        case .popular:
+            guard let movies = popular[pageNo] else {
+                return [TMdbMovie]()
+            }
+            return movies
         }
-        return movies
     }
     
-    func store(pageNo: Int, movies: [TMdbMovie]) {
-        hashMap[pageNo] = movies
+    func store(pageNo: Int, category: Category, movies: [TMdbMovie]) {
+        switch category {
+        case .latest:
+            latest[pageNo] = movies
+        case .popular:
+            popular[pageNo] = movies
+        }
     }
 }

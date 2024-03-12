@@ -14,26 +14,27 @@ public class TMdbDataSource {
     private let client: TmdbClient
     private let logger = Logger(subsystem: "TMDBSource", category: "DataSource")
     
+    
     public init() {
         repository = TmdbRepositoryImpl()
         client = TmdbClientImpl()
     }
     
-    public func getMovies(pageNo: Int, completion: @escaping ([TMdbMovie]) -> Void) {
-        let movies = repository.fetch(pageNo: pageNo)
+    public func getMovies(pageNo: Int, category: Category, completion: @escaping ([TMdbMovie]) -> Void) {
+        let movies = repository.fetch(pageNo: pageNo, category: category)
         guard movies.isEmpty else {
-            logger.log("From Repository Page No:\(pageNo) Count:\(movies.count)")
+            logger.log("From Repository \(category.getApiName()) Page No:\(pageNo) Count:\(movies.count)")
             completion(movies)
             return
         }
-        client.fetchMovies(pageNo: pageNo) { [weak self] result in
+        client.fetchMovies(pageNo: pageNo, category: category) { [weak self] result in
             guard let weakSelf = self else {
                 return
             }
             switch result {
             case .success(let movies):
-                weakSelf.logger.log("From Client Page No:\(pageNo) Count:\(movies.count)")
-                weakSelf.repository.store(pageNo: pageNo, movies: movies)
+                weakSelf.logger.log("From Client \(category.getApiName()) Page No:\(pageNo) Count:\(movies.count)")
+                weakSelf.repository.store(pageNo: pageNo, category: category, movies: movies)
                 completion(movies)
             case .failure(let error):
                 weakSelf.logger.critical("Error : \(error)")

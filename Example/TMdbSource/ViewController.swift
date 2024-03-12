@@ -17,12 +17,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        dataSource.getMovies(pageNo: 1) { movies in
+        dataSource.getMovies(pageNo: 1, category: .latest) { movies in
             print(" movies count before \(movies.count)")
         }
         
         DispatchQueue.global().asyncAfter(deadline: .now() + 5.0 , execute: DispatchWorkItem(block: {
-            self.dataSource.getMovies(pageNo: 1) { movies in
+            self.dataSource.getMovies(pageNo: 1, category: .popular) { movies in
                 print(" movies count after \(movies.count)")
             }
         }))
