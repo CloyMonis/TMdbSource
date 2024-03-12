@@ -8,35 +8,13 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TMdbSource'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TMdbSource.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '0.0.1'
+  s.summary          = 'TMdbSource acts as a network client for https://www.themoviedb.org/'
+  s.description      = "TMdbSource can be used to access the latest and popular movies using this library"
   s.homepage         = 'https://github.com/Cloy.Monis/TMdbSource'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Cloy.Monis' => 'cloy.monis@ril.com' }
   s.source           = { :git => 'https://github.com/Cloy.Monis/TMdbSource.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
+  s.ios.deployment_target = '14.0'
   s.source_files = 'TMdbSource/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TMdbSource' => ['TMdbSource/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
