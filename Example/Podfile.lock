@@ -1,0 +1,16 @@
+PODS:
+  - TMdbSource (0.1.0)
+
+DEPENDENCIES:
+  - TMdbSource (from `../`)
+
+EXTERNAL SOURCES:
+  TMdbSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TMdbSource: b9926bbd2f9f9b64ef8dd384f2bdc92fcd8ff415
+
+PODFILE CHECKSUM: bb8fed6d3bbadf2e52b5e4363dc10d6878e36774
+
+COCOAPODS: 1.15.2

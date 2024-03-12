@@ -1,0 +1,6 @@
+framework module TMdbSource {
+  umbrella header "TMdbSource-umbrella.h"
+
+  export *
+  module * { export * }
+}

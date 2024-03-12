@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import TMdbSource
 
 class ViewController: UIViewController {
 
+    let dataSource = TMdbDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        dataSource.getMovies(pageNo: 1) { movies in
+            print(" movies count before \(movies.count)")
+        }
+        
+        DispatchQueue.global().asyncAfter(deadline: .now() + 5.0 , execute: DispatchWorkItem(block: {
+            self.dataSource.getMovies(pageNo: 1) { movies in
+                print(" movies count after \(movies.count)")
+            }
+        }))
+        
     }
 
     override func didReceiveMemoryWarning() {

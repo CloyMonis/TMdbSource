@@ -1,0 +1,6 @@
+framework module Pods_TMdbSource_Example {
+  umbrella header "Pods-TMdbSource_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
