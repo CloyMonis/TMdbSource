@@ -26,8 +26,13 @@ public struct TMdbMovieResult: Codable {
 }
 
 public struct TMdbMovie: Codable {
-    var title: String?
-    var overview: String?
-    var poster_path: String?
-    var backdrop_path: String?
+    public var title: String?
+    public var overview: String?
+    public var poster_path: String?
+    public var backdrop_path: String?
+    public var release_date: String?
+    public var id: Int?
+    public var popularity: Float?
+    public var vote_average: Float?
+    public var vote_count: Int?
 }

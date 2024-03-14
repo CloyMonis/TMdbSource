@@ -13,11 +13,15 @@ public class TMdbDataSource {
     private let repository: TmdbRepository
     private let client: TmdbClient
     private let logger = Logger(subsystem: "TMDBSource", category: "DataSource")
-    
+    private var apiKey = "da30e822b633d40f53a9e6d8da4e8c99"
     
     public init() {
         repository = TmdbRepositoryImpl()
         client = TmdbClientImpl()
+    }
+    
+    public func set(apiKey: String) {
+        self.apiKey = apiKey
     }
     
     public func getMovies(pageNo: Int, category: Category, completion: @escaping ([TMdbMovie]) -> Void) {
@@ -27,6 +31,7 @@ public class TMdbDataSource {
             completion(movies)
             return
         }
+        client.set(apiKey: apiKey)
         client.fetchMovies(pageNo: pageNo, category: category) { [weak self] result in
             guard let weakSelf = self else {
                 return
