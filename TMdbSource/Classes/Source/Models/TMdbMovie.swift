@@ -36,3 +36,17 @@ public struct TMdbMovie: Codable {
     public var vote_average: Float?
     public var vote_count: Int?
 }
+
+public struct TMdbMovieDetail: Codable {
+    public var genres: [Genre]?
+    public var overview: String?
+    public var release_date: String?
+    public var title: String?
+    public var vote_average: Float?
+    public var revenue: Int?
+    public var poster_path: String?
+}
+
+public struct Genre: Codable {
+    public var name: String?
+}

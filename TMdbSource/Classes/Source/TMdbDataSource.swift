@@ -24,6 +24,10 @@ public class TMdbDataSource {
         self.apiKey = apiKey
     }
     
+    public func getEndPoint() -> String {
+        return "https://image.tmdb.org/t/p/"
+    }
+    
     public func getMovies(pageNo: Int, category: Category, completion: @escaping ([TMdbMovie]) -> Void) {
         let movies = repository.fetch(pageNo: pageNo, category: category)
         guard movies.isEmpty else {
@@ -45,6 +49,22 @@ public class TMdbDataSource {
                 weakSelf.logger.critical("Error : \(error)")
                 let movies = [TMdbMovie]()
                 completion(movies)
+            }
+        }
+    }
+    
+    public func getMovieDetail(id: Int, completion: @escaping (TMdbMovieDetail?) -> Void) {
+        client.set(apiKey: apiKey)
+        client.fetchMovie(id: id) { [weak self] result in
+            guard let weakSelf = self else {
+                return
+            }
+            switch result {
+            case .success(let movieDetail):
+                completion(movieDetail)
+            case .failure(let error):
+                weakSelf.logger.critical("Error : \(error)")
+                completion(nil)
             }
         }
     }
