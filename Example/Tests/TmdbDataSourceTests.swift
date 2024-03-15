@@ -48,6 +48,15 @@ final class TmdbDataSourceTests: XCTestCase {
         wait(for: [expectation!], timeout: 3)
     }
     
+    func testMovieDetailFailure() {
+        sut = TMdbDataSource()
+        sut?.getMovieDetail(id: 0, completion: { movie in
+            self.expectation?.fulfill()
+            XCTAssertNil(movie)
+        })
+        wait(for: [expectation!], timeout: 3)
+    }
+    
     func testMovieDetail() {
         sut = TMdbDataSource()
         sut?.getMovieDetail(id: 838209, completion: { movie in
