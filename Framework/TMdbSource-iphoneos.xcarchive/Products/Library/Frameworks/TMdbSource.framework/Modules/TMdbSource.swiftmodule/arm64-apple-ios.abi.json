@@ -1,0 +1,2759 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "TMdbSource"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "TMdbSource"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TMdbDataSource",
+        "printedName": "TMdbDataSource",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TMdbDataSource",
+                "printedName": "TMdbSource.TMdbDataSource",
+                "usr": "s:10TMdbSource0a4DataB0C"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10TMdbSource0a4DataB0CACycfc",
+            "mangledName": "$s10TMdbSource0a4DataB0CACycfc",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0a4DataB0C3set6apiKeyySS_tF",
+            "mangledName": "$s10TMdbSource0a4DataB0C3set6apiKeyySS_tF",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEndPoint",
+            "printedName": "getEndPoint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0a4DataB0C11getEndPointSSyF",
+            "mangledName": "$s10TMdbSource0a4DataB0C11getEndPointSSyF",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMovies",
+            "printedName": "getMovies(pageNo:category:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Category",
+                "printedName": "TMdbSource.Category",
+                "usr": "s:10TMdbSource8CategoryO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([TMdbSource.TMdbMovie]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TMdbSource.TMdbMovie]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TMdbMovie",
+                        "printedName": "TMdbSource.TMdbMovie",
+                        "usr": "s:10TMdbSource0A5MovieV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0a4DataB0C9getMovies6pageNo8category10completionySi_AA8CategoryOySayAA0A5MovieVGctF",
+            "mangledName": "$s10TMdbSource0a4DataB0C9getMovies6pageNo8category10completionySi_AA8CategoryOySayAA0A5MovieVGctF",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMovieDetail",
+            "printedName": "getMovieDetail(id:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TMdbSource.TMdbMovieDetail?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "TMdbSource.TMdbMovieDetail?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TMdbMovieDetail",
+                        "printedName": "TMdbSource.TMdbMovieDetail",
+                        "usr": "s:10TMdbSource0A11MovieDetailV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0a4DataB0C14getMovieDetail2id10completionySi_yAA0aeF0VSgctF",
+            "mangledName": "$s10TMdbSource0a4DataB0C14getMovieDetail2id10completionySi_yAA0aeF0VSgctF",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10TMdbSource0a4DataB0C",
+        "mangledName": "$s10TMdbSource0a4DataB0C",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Category",
+        "printedName": "Category",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "latest",
+            "printedName": "latest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TMdbSource.Category.Type) -> TMdbSource.Category",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Category",
+                    "printedName": "TMdbSource.Category",
+                    "usr": "s:10TMdbSource8CategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TMdbSource.Category.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "TMdbSource.Category",
+                        "usr": "s:10TMdbSource8CategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10TMdbSource8CategoryO6latestyA2CmF",
+            "mangledName": "$s10TMdbSource8CategoryO6latestyA2CmF",
+            "moduleName": "TMdbSource"
+          },
+          {
+            "kind": "Var",
+            "name": "popular",
+            "printedName": "popular",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TMdbSource.Category.Type) -> TMdbSource.Category",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Category",
+                    "printedName": "TMdbSource.Category",
+                    "usr": "s:10TMdbSource8CategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TMdbSource.Category.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Category",
+                        "printedName": "TMdbSource.Category",
+                        "usr": "s:10TMdbSource8CategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10TMdbSource8CategoryO7popularyA2CmF",
+            "mangledName": "$s10TMdbSource8CategoryO7popularyA2CmF",
+            "moduleName": "TMdbSource"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Category",
+                "printedName": "TMdbSource.Category",
+                "usr": "s:10TMdbSource8CategoryO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Category",
+                "printedName": "TMdbSource.Category",
+                "usr": "s:10TMdbSource8CategoryO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource8CategoryO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10TMdbSource8CategoryO2eeoiySbAC_ACtFZ",
+            "moduleName": "TMdbSource",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource8CategoryO9hashValueSivp",
+            "mangledName": "$s10TMdbSource8CategoryO9hashValueSivp",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource8CategoryO9hashValueSivg",
+                "mangledName": "$s10TMdbSource8CategoryO9hashValueSivg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource8CategoryO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10TMdbSource8CategoryO4hash4intoys6HasherVz_tF",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10TMdbSource8CategoryO",
+        "mangledName": "$s10TMdbSource8CategoryO",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TMdbMovieResult",
+        "printedName": "TMdbMovieResult",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TMdbMovieResult",
+                "printedName": "TMdbSource.TMdbMovieResult",
+                "usr": "s:10TMdbSource0A11MovieResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10TMdbSource0A11MovieResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10TMdbSource0A11MovieResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0A11MovieResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10TMdbSource0A11MovieResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10TMdbSource0A11MovieResultV",
+        "mangledName": "$s10TMdbSource0A11MovieResultV",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TMdbMovie",
+        "printedName": "TMdbMovie",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV5titleSSSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV5titleSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV5titleSSSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV5titleSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV5titleSSSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV5titleSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV5titleSSSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV5titleSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV8overviewSSSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV8overviewSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV8overviewSSSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV8overviewSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV8overviewSSSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV8overviewSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV8overviewSSSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV8overviewSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "poster_path",
+            "printedName": "poster_path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV11poster_pathSSSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV11poster_pathSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV11poster_pathSSSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV11poster_pathSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV11poster_pathSSSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV11poster_pathSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV11poster_pathSSSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV11poster_pathSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdrop_path",
+            "printedName": "backdrop_path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV13backdrop_pathSSSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV13backdrop_pathSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV13backdrop_pathSSSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV13backdrop_pathSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV13backdrop_pathSSSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV13backdrop_pathSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV13backdrop_pathSSSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV13backdrop_pathSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "release_date",
+            "printedName": "release_date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV12release_dateSSSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV12release_dateSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV12release_dateSSSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV12release_dateSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV12release_dateSSSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV12release_dateSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV12release_dateSSSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV12release_dateSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV2idSiSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV2idSiSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV2idSiSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV2idSiSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV2idSiSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV2idSiSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV2idSiSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV2idSiSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popularity",
+            "printedName": "popularity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV10popularitySfSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV10popularitySfSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV10popularitySfSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV10popularitySfSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV10popularitySfSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV10popularitySfSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV10popularitySfSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV10popularitySfSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vote_average",
+            "printedName": "vote_average",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV12vote_averageSfSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV12vote_averageSfSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV12vote_averageSfSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV12vote_averageSfSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV12vote_averageSfSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV12vote_averageSfSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV12vote_averageSfSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV12vote_averageSfSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vote_count",
+            "printedName": "vote_count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A5MovieV10vote_countSiSgvp",
+            "mangledName": "$s10TMdbSource0A5MovieV10vote_countSiSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV10vote_countSiSgvg",
+                "mangledName": "$s10TMdbSource0A5MovieV10vote_countSiSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV10vote_countSiSgvs",
+                "mangledName": "$s10TMdbSource0A5MovieV10vote_countSiSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A5MovieV10vote_countSiSgvM",
+                "mangledName": "$s10TMdbSource0A5MovieV10vote_countSiSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TMdbMovie",
+                "printedName": "TMdbSource.TMdbMovie",
+                "usr": "s:10TMdbSource0A5MovieV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10TMdbSource0A5MovieV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10TMdbSource0A5MovieV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0A5MovieV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10TMdbSource0A5MovieV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10TMdbSource0A5MovieV",
+        "mangledName": "$s10TMdbSource0A5MovieV",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TMdbMovieDetail",
+        "printedName": "TMdbMovieDetail",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "genres",
+            "printedName": "genres",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[TMdbSource.Genre]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[TMdbSource.Genre]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Genre",
+                        "printedName": "TMdbSource.Genre",
+                        "usr": "s:10TMdbSource5GenreV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[TMdbSource.Genre]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TMdbSource.Genre]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Genre",
+                            "printedName": "TMdbSource.Genre",
+                            "usr": "s:10TMdbSource5GenreV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[TMdbSource.Genre]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[TMdbSource.Genre]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Genre",
+                            "printedName": "TMdbSource.Genre",
+                            "usr": "s:10TMdbSource5GenreV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV6genresSayAA5GenreVGSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV8overviewSSSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV8overviewSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV8overviewSSSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV8overviewSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV8overviewSSSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV8overviewSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV8overviewSSSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV8overviewSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "release_date",
+            "printedName": "release_date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV12release_dateSSSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV12release_dateSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV12release_dateSSSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV12release_dateSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV12release_dateSSSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV12release_dateSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV12release_dateSSSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV12release_dateSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV5titleSSSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV5titleSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV5titleSSSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV5titleSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV5titleSSSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV5titleSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV5titleSSSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV5titleSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vote_average",
+            "printedName": "vote_average",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV12vote_averageSfSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV12vote_averageSfSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV12vote_averageSfSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV12vote_averageSfSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV12vote_averageSfSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV12vote_averageSfSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV12vote_averageSfSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV12vote_averageSfSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "revenue",
+            "printedName": "revenue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV7revenueSiSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV7revenueSiSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV7revenueSiSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV7revenueSiSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV7revenueSiSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV7revenueSiSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV7revenueSiSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV7revenueSiSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "poster_path",
+            "printedName": "poster_path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource0A11MovieDetailV11poster_pathSSSgvp",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV11poster_pathSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV11poster_pathSSSgvg",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV11poster_pathSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV11poster_pathSSSgvs",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV11poster_pathSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource0A11MovieDetailV11poster_pathSSSgvM",
+                "mangledName": "$s10TMdbSource0A11MovieDetailV11poster_pathSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TMdbMovieDetail",
+                "printedName": "TMdbSource.TMdbMovieDetail",
+                "usr": "s:10TMdbSource0A11MovieDetailV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10TMdbSource0A11MovieDetailV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource0A11MovieDetailV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10TMdbSource0A11MovieDetailV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10TMdbSource0A11MovieDetailV",
+        "mangledName": "$s10TMdbSource0A11MovieDetailV",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Genre",
+        "printedName": "Genre",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10TMdbSource5GenreV4nameSSSgvp",
+            "mangledName": "$s10TMdbSource5GenreV4nameSSSgvp",
+            "moduleName": "TMdbSource",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource5GenreV4nameSSSgvg",
+                "mangledName": "$s10TMdbSource5GenreV4nameSSSgvg",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource5GenreV4nameSSSgvs",
+                "mangledName": "$s10TMdbSource5GenreV4nameSSSgvs",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10TMdbSource5GenreV4nameSSSgvM",
+                "mangledName": "$s10TMdbSource5GenreV4nameSSSgvM",
+                "moduleName": "TMdbSource",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Genre",
+                "printedName": "TMdbSource.Genre",
+                "usr": "s:10TMdbSource5GenreV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10TMdbSource5GenreV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10TMdbSource5GenreV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10TMdbSource5GenreV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10TMdbSource5GenreV6encode2toys7Encoder_p_tKF",
+            "moduleName": "TMdbSource",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10TMdbSource5GenreV",
+        "mangledName": "$s10TMdbSource5GenreV",
+        "moduleName": "TMdbSource",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 12,
+      "value": "\"HttpClient\""
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 12,
+      "value": "\"TMDBSource\""
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 12,
+      "value": "\"HttpClient\""
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/HttpClient_Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 240,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/HttpClient_Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 347,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/HttpClient_Models.swift",
+      "kind": "IntegerLiteral",
+      "offset": 546,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/TMdbDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 12,
+      "value": "\"TMDBSource\""
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/TMdbDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 12,
+      "value": "\"DataSource\""
+    },
+    {
+      "filePath": "\/Users\/cloy.monis\/Cloy\/Code\/TMdbSource\/Framework\/TMdbSource\/TMdbSource\/Source\/TMdbDataSource.swift",
+      "kind": "StringLiteral",
+      "offset": 333,
+      "length": 34,
+      "value": "\"da30e822b633d40f53a9e6d8da4e8c99\""
+    }
+  ]
+}
