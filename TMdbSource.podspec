@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.author           = { 'CloyMonis' => 'cloymonis1991@gmail.com' }
   s.source           = { :git => 'https://github.com/CloyMonis/TMdbSource.git', :tag => s.version.to_s }
   s.ios.deployment_target = '14.0'
-  # s.source_files = 'TMdbSource/Classes/**/*'
   s.vendored_frameworks = 'TMdbSource.xcframework'
   
 end
