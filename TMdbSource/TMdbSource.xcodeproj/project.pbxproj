@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F1F94A52BA819E8001AAC45 /* TMdbSource.docc in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94A42BA819E8001AAC45 /* TMdbSource.docc */; };
 		1F1F94AB2BA819E9001AAC45 /* TMdbSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1F94A02BA819E8001AAC45 /* TMdbSource.framework */; };
-		1F1F94B02BA819E9001AAC45 /* TMdbSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94AF2BA819E9001AAC45 /* TMdbSourceTests.swift */; };
 		1F1F94B12BA819E9001AAC45 /* TMdbSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1F94A32BA819E8001AAC45 /* TMdbSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F1F94C22BA81A3F001AAC45 /* TmdbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94BB2BA81A3F001AAC45 /* TmdbRepository.swift */; };
 		1F1F94C32BA81A3F001AAC45 /* TMdbMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94BD2BA81A3F001AAC45 /* TMdbMovie.swift */; };
@@ -17,6 +16,8 @@
 		1F1F94C52BA81A3F001AAC45 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94BF2BA81A3F001AAC45 /* HttpClient.swift */; };
 		1F1F94C62BA81A3F001AAC45 /* HttpClient_Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94C02BA81A3F001AAC45 /* HttpClient_Models.swift */; };
 		1F1F94C72BA81A3F001AAC45 /* TmdbClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F94C12BA81A3F001AAC45 /* TmdbClient.swift */; };
+		1FBFB24D2BA840B400EE31E5 /* TmdbDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFB24B2BA840B400EE31E5 /* TmdbDataSourceTests.swift */; };
+		1FBFB24E2BA840B400EE31E5 /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBFB24C2BA840B400EE31E5 /* HttpClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +35,14 @@
 		1F1F94A32BA819E8001AAC45 /* TMdbSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMdbSource.h; sourceTree = "<group>"; };
 		1F1F94A42BA819E8001AAC45 /* TMdbSource.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TMdbSource.docc; sourceTree = "<group>"; };
 		1F1F94AA2BA819E9001AAC45 /* TMdbSourceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMdbSourceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F1F94AF2BA819E9001AAC45 /* TMdbSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMdbSourceTests.swift; sourceTree = "<group>"; };
 		1F1F94BB2BA81A3F001AAC45 /* TmdbRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TmdbRepository.swift; sourceTree = "<group>"; };
 		1F1F94BD2BA81A3F001AAC45 /* TMdbMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMdbMovie.swift; sourceTree = "<group>"; };
 		1F1F94BE2BA81A3F001AAC45 /* TMdbDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMdbDataSource.swift; sourceTree = "<group>"; };
 		1F1F94BF2BA81A3F001AAC45 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		1F1F94C02BA81A3F001AAC45 /* HttpClient_Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient_Models.swift; sourceTree = "<group>"; };
 		1F1F94C12BA81A3F001AAC45 /* TmdbClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TmdbClient.swift; sourceTree = "<group>"; };
+		1FBFB24B2BA840B400EE31E5 /* TmdbDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TmdbDataSourceTests.swift; sourceTree = "<group>"; };
+		1FBFB24C2BA840B400EE31E5 /* HttpClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,8 @@
 		1F1F94AE2BA819E9001AAC45 /* TMdbSourceTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F1F94AF2BA819E9001AAC45 /* TMdbSourceTests.swift */,
+				1FBFB24C2BA840B400EE31E5 /* HttpClientTests.swift */,
+				1FBFB24B2BA840B400EE31E5 /* TmdbDataSourceTests.swift */,
 			);
 			path = TMdbSourceTests;
 			sourceTree = "<group>";
@@ -242,7 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1F94B02BA819E9001AAC45 /* TMdbSourceTests.swift in Sources */,
+				1FBFB24E2BA840B400EE31E5 /* HttpClientTests.swift in Sources */,
+				1FBFB24D2BA840B400EE31E5 /* TmdbDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
