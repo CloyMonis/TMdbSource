@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/TMdbSource.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KXBGia009UruSELMTmhpr3+p9y8=
+		4A52PW28tFnAMcicNsIsmAPTSv0=
 		</data>
 		<key>Modules/TMdbSource.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/TMdbSource.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7HPSDdRnDoLLYNx5ACpLy8SD0wg=
+		9w8ZG/j8ZPnJFGQ4CcGyTkrKLd4=
 		</data>
 		<key>Modules/TMdbSource.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KXBGia009UruSELMTmhpr3+p9y8=
+		4A52PW28tFnAMcicNsIsmAPTSv0=
 		</data>
 		<key>Modules/TMdbSource.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/TMdbSource.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		agBaspBNBrEr/xA+uBX3sL2Pqt4=
+		AzzxfzPlIrD142UJuPyvAxUC3hE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3KYYqWdm77oXkD7PZp/qVepeghIc6jU441HQqhl3q0I=
+			RxyWunBCdz2ZSl4fNuKM1j8P87uBNg4WuhaIuTKfI8s=
 			</data>
 		</dict>
 		<key>Modules/TMdbSource.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQBwgREVK5uSjF5Z4eZxvNWFQUKS1w+n2GDWgDBXXyM=
+			+u9zBF+MNz9z+3LnyoNgzSxAZM2DXVeOmc5vKTtFTVM=
 			</data>
 		</dict>
 		<key>Modules/TMdbSource.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3KYYqWdm77oXkD7PZp/qVepeghIc6jU441HQqhl3q0I=
+			RxyWunBCdz2ZSl4fNuKM1j8P87uBNg4WuhaIuTKfI8s=
 			</data>
 		</dict>
 		<key>Modules/TMdbSource.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OOip+MpgP9KoT10NLzS2CFSh6D+w0dm1yzNcWyRRs78=
+			AYJFyeJj8qJCp1ooULYgIQN7CHKMli3tW/Gwew5Bxak=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

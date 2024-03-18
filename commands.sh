@@ -1,5 +1,3 @@
-rm -rf TMdbSource-iphonesimulator.xcarchive
-rm -rf TMdbSource-iphoneos.xcarchive
 rm -rf TMdbSource.xcframework
 
 xcodebuild archive \
@@ -23,3 +21,6 @@ xcodebuild -create-xcframework \
   -framework ./TMdbSource-iphonesimulator.xcarchive/Products/Library/Frameworks/TMdbSource.framework \
   -framework ./TMdbSource-iphoneos.xcarchive/Products/Library/Frameworks/TMdbSource.framework \
   -output TMdbSource.xcframework
+
+rm -rf TMdbSource-iphonesimulator.xcarchive
+rm -rf TMdbSource-iphoneos.xcarchive
