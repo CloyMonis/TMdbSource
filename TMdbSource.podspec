@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TMdbSource'
-  s.version          = '0.0.6'
+  s.version          = '0.0.7'
   s.summary          = 'TMdbSource acts as a network client for https://www.themoviedb.org/'
   s.description      = "TMdbSource can be used to access the latest and popular movies using this library"
   s.homepage         = 'https://github.com/Cloy.Monis/TMdbSource'
