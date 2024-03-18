@@ -1,0 +1,62 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TMdbSource
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+@_exported import TMdbSource
+import _Concurrency
+import _StringProcessing
+import os
+public class TMdbDataSource {
+  public init()
+  public func set(apiKey: Swift.String)
+  public func getEndPoint() -> Swift.String
+  public func getMovies(pageNo: Swift.Int, category: TMdbSource.Category, completion: @escaping ([TMdbSource.TMdbMovie]) -> Swift.Void)
+  public func getMovieDetail(id: Swift.Int, completion: @escaping (TMdbSource.TMdbMovieDetail?) -> Swift.Void)
+  @objc deinit
+}
+public enum Category {
+  case latest
+  case popular
+  public static func == (a: TMdbSource.Category, b: TMdbSource.Category) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct TMdbMovieResult : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct TMdbMovie : Swift.Codable {
+  public var title: Swift.String?
+  public var overview: Swift.String?
+  public var poster_path: Swift.String?
+  public var backdrop_path: Swift.String?
+  public var release_date: Swift.String?
+  public var id: Swift.Int?
+  public var popularity: Swift.Float?
+  public var vote_average: Swift.Float?
+  public var vote_count: Swift.Int?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct TMdbMovieDetail : Swift.Codable {
+  public var genres: [TMdbSource.Genre]?
+  public var overview: Swift.String?
+  public var release_date: Swift.String?
+  public var title: Swift.String?
+  public var vote_average: Swift.Float?
+  public var revenue: Swift.Int?
+  public var poster_path: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Genre : Swift.Codable {
+  public var name: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension TMdbSource.Category : Swift.Equatable {}
+extension TMdbSource.Category : Swift.Hashable {}
